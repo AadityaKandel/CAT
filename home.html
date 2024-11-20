@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Cool Cat Website</title>
+    <script>
+        function PlayandAnimate(){
+            document.getElementById('items').style.animationName="letzgoo";
+            document.getElementById('audio').play();
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+
+        <h1>COOL CAT</h1>
+
+        <div class="head_items">
+            <a href="home.html" class="head_hyperlink">Home</a>
+            <a href="mailto:m8011029@gsstulsipur.edu.np" class="head_hyperlink">Contact</a>
+            <a href="info.html" class="head_hyperlink">Cat Info</a>
+            <a href="index.html" class="head_hyperlink">Login</a>
+            
+            <input type="search" class="head_search" placeholder="SEARCH">
+            <a href="search.html"><img src="search.png" class="head_img"></a>
+        </div>
+
+    </header>
+
+    <div class="main">
+
+        <div class="items" id="items" onclick="PlayandAnimate()">
+            <p>HUMAN, USE YOUR PAWS, TAP HERE & LETS ROCK!!</p>
+        </div>
+
+    </div>
+
+    <audio id="audio" src="cat1.mp3" loop></audio>
+
+</body>
+</html>
