@@ -8,6 +8,9 @@
     <script>
         function PlayandAnimate(){
             document.getElementById('items').style.animationName="letzgoo";
+            document.getElementById('items').style.background="url('paws.png')";
+            document.getElementById('items').style.backgroundSize='contain';
+            document.getElementById('invisible').style.opacity='0%';
             document.getElementById('audio').play();
         }
     </script>
@@ -33,7 +36,7 @@
     <div class="main">
 
         <div class="items" id="items" onclick="PlayandAnimate()">
-            <p>HUMAN, USE YOUR PAWS, TAP HERE & LETS ROCK!!</p>
+            <p id="invisible">HUMAN! USE YOUR PAWS, TAP HERE & LETS ROCK!!</p>
         </div>
 
     </div>
